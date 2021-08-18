@@ -1,5 +1,14 @@
+/*Style for body*/
 body{ background-color: black; font-family: arial, sans-serif; color: white; }
+
+/*Style for heading*/
 h1{ color: green; font-family: verdana, sans-serif; }
+
+/*Style for maindiv*/
 .maindiv{ background-color: white; color: black; width: 300px; padding: 20px; border-radius: 25px; }
+
+/*Style for nestdiv*/
 .nestdiv{ margin: auto; width: 50%; }
+
+/*Style of result display*/
 .highlight{ background-color: yellow; }

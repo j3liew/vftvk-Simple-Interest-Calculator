@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Reference to Javascript code-->
         <script src="script.js"></script>
+
+        <!--Reference to CSS code-->
         <link rel="stylesheet" href="style.css">
-        <title>Simple Interest Calculator</title>
+
+        <title>Web App - Simple Interest Calculator</title>
     </head>
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
             
+            <!--Nested div to apply separate formatting-->
             <div class="nestdiv">
+
+                <!--Input for Principal-->
                 Amount <input type="number" id="principal">
                 <br><br>
-                Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
+
+                <!--Input for Rate-->
+                Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" oninput="updateRate()">
                 <span id="rate_val">10.25%</span>
                 <br><br>
+
+                <!--Input for No. of Years-->
                 No. of Years <select id="years">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -28,6 +39,8 @@
                     <option value="10">10</option>
                 </select>
                 <br><br>
+
+                <!--Button and Result display-->
                 <button onclick="checkPrincipal();compute();">Compute Interest</button>
                 <span id="result"></span> 
                 <br><br>

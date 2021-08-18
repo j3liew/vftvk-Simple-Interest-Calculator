@@ -1,3 +1,4 @@
+//Calculate result and display
 function compute()
 {
     var principal = document.getElementById("principal").value;
@@ -15,12 +16,16 @@ function compute()
     document.getElementById("result").innerHTML = principalHTML+rateHTML+interestHTML+yearHTML;
 }
 
+
+//Dynamically display slider value
 function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval+"%";
 }
 
+
+//Check principal input
 function checkPrincipal()
 {
     var principal = document.getElementById("principal").value;
